@@ -19,7 +19,22 @@ class Ninja {
     }
 }
 
-//const ninja1 = new Ninja("Hyabusa", 15);
-//ninja1.sayName();
-//ninja1.showStats();
-//ninja1.drinkSake();
+class Sensei extends Ninja {
+    constructor(sname){
+        super(sname);
+        this.ninjaHealth = 200;
+        this.ninjaSpeed = 10;
+        this.ninjaStrength = 10;
+        this.Wisdom = 10;
+    }
+
+    speakWisdom(){
+        super.drinkSake();
+        console.log('For man with no forgiveness in heart, life worse punishment than death.');
+    }
+
+}
+
+//const superSensei = new Sensei('Mr. Miyagi');
+//superSensei.speakWisdom();
+//superSensei.showStats();
